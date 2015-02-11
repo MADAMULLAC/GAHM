@@ -49,9 +49,15 @@ We will be using C++, OpenGL, !..!; Building on all 3 major platforms (Windows, 
 
 ####Basic percentage breakdown
 25% For basically what we had last semester with slight improvements. 
+
 20% For using python. 
+
 15% for having a good makefile/exe.
+
 15% Advanced texturing and game design.
+
 10% for git usage. 
+
 10% for documentation. 
+
 5% Our panache.
