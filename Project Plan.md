@@ -5,6 +5,7 @@ Game About Heuristic Mazes
 ## The Team
 - Adam Worley
 - Callum Harrod
+
 ###Aims
 - Our aim is to create a fairly basic game built upon C++ and OpenGL.
 - We intend to include python bindings to simplify the game engine.
