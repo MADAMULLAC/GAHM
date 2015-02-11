@@ -26,6 +26,7 @@ We intend to develop a 3D Wompas world esque game using C++ and openGL. The game
 
 ###Timeline and milestones
 
+
 ###How to meet objectives
 ---
 
@@ -48,16 +49,16 @@ We will be using C++, OpenGL, !..!; Building on all 3 major platforms (Windows, 
 ## Marking Scheme
 
 ####Basic percentage breakdown
-25% For basically what we had last semester with slight improvements. 
+25% For basic game that we had last semester with improvements. 
 
 20% For using python. 
 
-15% for having a good makefile/exe.
+15% For having a good makefile/exe.
 
 15% Advanced texturing and game design.
 
-10% for git usage. 
+10% For git usage. 
 
-10% for documentation. 
+10% For documentation. 
 
 5% Our panache.
