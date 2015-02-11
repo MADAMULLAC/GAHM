@@ -1,20 +1,19 @@
 # GAHM
 Game About Heuristic Mazes
 
-
 ## The Team
 - Adam Worley
 - Callum Harrod
 
-###Aims
+### Aims
 - Our aim is to create a fairly basic game built upon C++ and OpenGL.
 - We intend to include python bindings to simplify the game engine.
 - The end goal will be a game with not just basic gameplay mechanics such as movement and camera controls but also mechanics specific to our game.
 - To build and run the game on the three major platforms.
-- Include automated building or exectuable.
+- Include automated building or executable.
 - Include AI with path finding etc...
 
-###Objectives
+### Objectives
 - Build upon the basic code base provided.
 - Include more advanced shaders and shapes.
 - Develop multiple levels (Possibly through level loading or procedurally generated).
@@ -22,7 +21,9 @@ Game About Heuristic Mazes
 
 ## Project Pitch
 
-We intend to develop a 3D Wompas world esque game using C++ and openGL. The game will consist of maps that are randomly generated from a text file, which will allocate the size of the map, enemies and enemy difficulty.
+We intend to develop a 3D Wompas world esque game using C++ and openGL.
+The game will consist of maps that are randomly generated from a text file, which will allocate the size of the map,
+enemies and enemy difficulty.
 
 ### Timeline and milestones
 
@@ -45,11 +46,12 @@ We intend to develop a 3D Wompas world esque game using C++ and openGL. The game
 - [ ] Use python bindings for the user game engine.
 
 ## Proposed Technologies
-We will be using C++, OpenGL, !..!; Building on all 3 major platforms (Windows, OSx, Linux) while devloping on OSx.
+We will be using C++, OpenGL, !..!; Building on all 3 major platforms (Windows, OSx, Linux) while developing on OSx.
 
 ## Marking Scheme
 
-####Basic percentage breakdown
+#### Basic percentage breakdown
+
 25% For basic game that we had last semester with improvements.
 
 20% For using python.
