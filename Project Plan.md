@@ -40,6 +40,7 @@ enemies and enemy difficulty.
 - [ ] openGL base.
 
 ##### Artificial intelligent agents
+
 - [ ] Create the AI for the enemy character.
 - [ ] Generate Pathfinding Algorithms.
 
