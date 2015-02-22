@@ -5,11 +5,15 @@
 
 int main(int argc, char* argv[]) {
 
+    bool quit = false;
+
+    SDL_Event e;
+
     SDL_Window *window;                                                     // Declare a pointer
 
     SDL_Init(SDL_INIT_VIDEO);                                               // Initialize SDL2
 
-    window = SDL_CreateWindow(                                              // Creates the window with the following settings: 
+    window = SDL_CreateWindow(                                              // Creates the window with the following settings:
         "GAHM Window",                                                      // window title
         SDL_WINDOWPOS_UNDEFINED,                                            // initial x position
         SDL_WINDOWPOS_UNDEFINED,                                            // initial y position
@@ -23,8 +27,15 @@ int main(int argc, char* argv[]) {
         return 1;
     }
 
-    SDL_Delay(5000);                                                        // Pause execution of window for 5000 milliseconds
-
+    while( !quit ){
+      //Handle events on queue
+            while( SDL_PollEvent( &e ) != 0 ){
+                //User requests quit
+                if( e.type == SDL_QUIT ){
+                    quit = true;
+                }
+            }                                                       // Pause execution of window for 5000 milliseconds
+    }
     SDL_DestroyWindow(window);                                              // Close and destroy the window
 
     // Clean up
