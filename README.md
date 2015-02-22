@@ -10,6 +10,7 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 - g++ (or other c++ compiler)
 - boost
 - openGL 3.0+
+- GLEW
 
 ## How to build
 #### Will eventually contain instructions for using the make file.
