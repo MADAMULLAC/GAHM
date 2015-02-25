@@ -1,1 +1,1 @@
-man_MANS = window.8
+man_MANS = windowman.1
