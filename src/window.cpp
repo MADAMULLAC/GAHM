@@ -1,11 +1,10 @@
 // Creating window with SDL 2
 
-#include <SDL2/SDL.h>
-#include <stdio.h>
-
+#include "window.h"
 int main(int argc, char* argv[]) {
 
     bool quit = false;
+    GLuint WIDTH = 800, HEIGHT = 600;
 
     SDL_Event e;
 
@@ -17,8 +16,8 @@ int main(int argc, char* argv[]) {
         "GAHM Window",                                                      // window title
         SDL_WINDOWPOS_UNDEFINED,                                            // initial x position
         SDL_WINDOWPOS_UNDEFINED,                                            // initial y position
-        1336,                                                               // width in pixels
-        768,                                                                // height in pixels
+        WIDTH,                                                               // width in pixels
+        HEIGHT,                                                                // height in pixels
         SDL_WINDOW_OPENGL                                                   // flags see below
     );
 
