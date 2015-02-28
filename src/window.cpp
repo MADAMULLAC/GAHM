@@ -4,7 +4,7 @@
 int main(int argc, char* argv[]) {
 
     bool quit = false;
-    GLuint WIDTH = 800, HEIGHT = 600;
+    GLuint WIDTH = 800, HEIGHT = 600;                                       // Width in pixels and height in pixels
 
     SDL_Event e;
 
@@ -16,10 +16,16 @@ int main(int argc, char* argv[]) {
         "GAHM Window",                                                      // window title
         SDL_WINDOWPOS_UNDEFINED,                                            // initial x position
         SDL_WINDOWPOS_UNDEFINED,                                            // initial y position
-        WIDTH,                                                               // width in pixels
-        HEIGHT,                                                                // height in pixels
+        WIDTH,
+        HEIGHT,
         SDL_WINDOW_OPENGL                                                   // flags see below
     );
+
+    glewExperimental = GL_TRUE;
+    if (glewInit() != GLEW_OK){
+      std::cout << "Failed to initialize GLEW" << std::endl;
+      return -1;
+    }
 
     if (window == NULL) {                                                   // Check that the window was successfully made
         printf("Could not create window: %s\n", SDL_GetError());            // If the window couldn't be created
@@ -33,7 +39,7 @@ int main(int argc, char* argv[]) {
                 if( e.type == SDL_QUIT ){
                     quit = true;
                 }
-            }                                                       // Pause execution of window for 5000 milliseconds
+            }
     }
     SDL_DestroyWindow(window);                                              // Close and destroy the window
 
