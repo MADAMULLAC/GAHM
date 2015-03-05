@@ -16,7 +16,7 @@ COMPILER_FLAGS = -w
 
 # LINKER_FLAGS specifies the libraries we're linking against
 # Cocoa, IOKit, and CoreVideo are needed for static GLFW3.
-LINKER_FLAGS = -framework OpenGL -lsdl2 -lglew
+LINKER_FLAGS = -framework OpenGL -lsdl2 -lglew -OpenGL
 
 # OBJ_NAME specifies the name of our executable
 OBJ_NAME = window
