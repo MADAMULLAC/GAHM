@@ -145,6 +145,6 @@ int main(int argc, char ** argv) {
   while (SDL_WaitEvent(&event)) {
       Draw(window, game_world);
       SDL_Quit();
-    }
   }
 }
+
