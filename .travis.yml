@@ -15,8 +15,6 @@ install:
 - sudo apt-get install -q automake
 - sudo apt-get install -q build-essential
 - sudo apt-get install -q libtool
-
-script:
 - autoreconf -i
-  - ./configure
-  - make
+- ./configure
+- make
