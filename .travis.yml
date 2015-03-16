@@ -1,5 +1,5 @@
 language: cpp
-	before_install:
+  before_install:
 	- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
 	- sudo apt-add-repository -y ppa:zoogie/sdl2-snapshots
 	- sudo apt-get update -qq
@@ -17,3 +17,5 @@ language: cpp
 	- autoreconf -i
   - ./configure
   - make
+
+--- # Use travis
