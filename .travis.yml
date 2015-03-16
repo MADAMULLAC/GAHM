@@ -13,7 +13,8 @@ install:
 - sudo apt-get install -q libglew-dev
 - sudo apt-get install -q -y libsdl2-image-dev
 - sudo apt-get install -q automake
-- sudo apt-get install build-essential 
+- sudo apt-get install -q build-essential
+- sudo apt-get install -q libtool
 
 script:
 - autoreconf -i
