@@ -1,40 +1,21 @@
-# Prerequisites #
+#Read Me
 
-* GNU Autotools
-* OpenGL 3.0
-* C++11 compiler (tested with GCC 4.8.3+)
-* [Boost](http://www.boost.org/)
-* [GLEW](http://glew.sourceforge.net/)
-* [SDL2](https://www.libsdl.org/)
-* [GLM](http://glm.g-truc.net/)
+##Project Plan
+Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/blob/master/ProjectPlan.md "Project Plan")
 
-On Fedora 20 or later you can install these using a single command (as root):
+##Below will contain the details on how to run and control the game and will be filled in over time.
 
-> $ yum install boost-* glew-devel SDL2_* glm-devel
+## Prerequisites
+- Unix like command line (terminal, cygwin, etc…) to run makefile
+- GNU Autotools
+- SDL2 (for windows follow [this tutorial on how to build and include SDL](http://www.libsdl.org/extras/win32/cygwin/README.txt "SDL windows Tutorial link")
+- g++ (or other c++ compiler)
+- boost
+- openGL 3.0+
+- GLEW
+- GLM
 
-# Building #
+## How to build
+#### Will eventually contain instructions for using the make file.
 
-After cloning the source code or extracting a distributed archive, change to the
-directory where the source code is:
-
-``` bash
-$ autoreconf -i
-$ ./configure
-$ make
-```
-
-Alternatively, if you'd like to build the project in debug mode use:
-
-> $ make CXXFLAGS=-DDEBUG
-
-# Running #
-
-The build process should create a binary that can be executed as follows:
-
-> $ ./src/shaderexample
-
-See
-
-> $ ./src/shaderexample --help
-
-for usage instructions.
+## Aim of the game
