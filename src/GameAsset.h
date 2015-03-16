@@ -3,7 +3,10 @@
 
 #include <iostream>
 
-#include <OpenGL/gl3.h>
+#ifdef __APPLE__
+  #include <OpenGL/gl3.h>
+#endif
+#include <GL/gl.h>
 
 class GameAsset {
  public:

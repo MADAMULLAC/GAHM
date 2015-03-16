@@ -1,6 +1,9 @@
 #define GLEW_STATIC // Easier debugging
 #include <GL/glew.h>
-#include <OpenGL/gl3.h>
+#ifdef __APPLE__
+  #include <OpenGL/gl3.h>
+#endif
+#include <GL/gl.h>
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <memory>
@@ -50,9 +53,9 @@ std::shared_ptr<SDL_Window> InitWorld() {
   SDL_Window * _window;
   std::shared_ptr<SDL_Window> window;
 
-  // Glew will later ensure that OpenGL 3 *is* supported
+  // Glew will later ensure that OpenGL 2 *is* supported
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
 
   // Do double buffering in GL
@@ -87,12 +90,12 @@ std::shared_ptr<SDL_Window> InitWorld() {
     return nullptr;
   }
 
-  // Initialise GLEW - an easy way to ensure OpenGl 3.0+
+  // Initialise GLEW - an easy way to ensure OpenGl 2.0+
   // The *must* be done after we have set the video mode - otherwise we have no
   // OpenGL context to test.
   glewInit();
-  if (!glewIsSupported("GL_VERSION_3_0")) {
-    std::cerr << "OpenGL 3.0 not available" << std::endl;
+  if (!glewIsSupported("GL_VERSION_2_0")) {
+    std::cerr << "OpenGL 2.0 not available" << std::endl;
     return nullptr;
   }
 
