@@ -1,9 +1,9 @@
 #define GLEW_STATIC // Easier debugging
 #include <GL/glew.h>
 #ifdef __APPLE__
-  #include <OpenGL/gl3.h>
+
+  #include <GL/gl.h>
 #endif
-#include <GL/gl.h>
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <memory>
@@ -18,7 +18,7 @@
 /*
  * SDL timers run in separate threads.  In the timer thread
  * push an event onto the event queue.  This event signifies
- * to call display() from the thread in which the OpenGL 
+ * to call display() from the thread in which the OpenGL
  * context was created.
  */
 Uint32 tick(Uint32 interval, void *param) {

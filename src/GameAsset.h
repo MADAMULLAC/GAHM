@@ -5,8 +5,9 @@
 
 #ifdef __APPLE__
   #include <OpenGL/gl3.h>
+#else
+  #include <GL/gl.h>
 #endif
-#include <GL/gl.h>
 
 class GameAsset {
  public:
