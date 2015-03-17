@@ -1,7 +1,8 @@
 EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h
 
-bin_PROGRAMS = shaderexample
+bin_PROGRAMS = shaderexample travistest
 shaderexample_SOURCES = main.cc GameWorld.cc GameAssetManager.cc CubeAsset.cc
+travistest_SOURCES = test.cpp GameWorld.cc GameAssetManager.cc CubeAsset.cc
 
 AM_CPPFLAGS = -DGL_GLEXT_PROTOTYPES -DGL3_PROTOTYPES
 AM_CPPFLAGS += -std=c++11
