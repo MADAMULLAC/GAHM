@@ -18,4 +18,5 @@ install:
 - sudo apt-get install -q libboost-all-dev
 - autoreconf -i
 - ./configure
+script:
 - make
