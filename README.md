@@ -46,9 +46,14 @@ Please note, that GLM is still not being linked and the makefile is still under 
 
 ### OSx
 To get the above packages I would recommend using [brew](http://brew.sh/) and [MacPorts](https://www.macports.org/) as these will do all the package management for you; both are fairly simple to install by following the simple instructions on their relevant websites.
-Once again ensure you have the above packages included. I hope to include a simple terminal command to install all of the dependencies
-in time.
+Once again ensure you have the above packages included. 
+
+> $ brew install autoconf automake libtool boost
+
+By installing macport that should suffice for other requirements.
 
 You will also need xCode installed as this will include dependencies required by the game.
 
 ## Aim of the game
+
+NOBODY KNOWS!
