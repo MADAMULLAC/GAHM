@@ -1,3 +1,8 @@
 .DS_Store
 window
 *.o
+*.in
+*.cache
+*.guess
+*.sub
+missing
