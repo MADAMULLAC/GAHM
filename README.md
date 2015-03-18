@@ -8,7 +8,7 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 ## Prerequisites
 - Unix like command line (terminal, cygwin, etc…) to run makefile
 - GNU Autotools
-- SDL2 (for windows follow [this tutorial on how to build and include SDL](http://www.libsdl.org/extras/win32/cygwin/README.txt "SDL windows Tutorial link")
+- SDL2 (for windows follow [this tutorial on how to build and include SDL](http://www.libsdl.org/extras/win32/cygwin/README.txt "SDL windows Tutorial link"))
 - g++ (or other c++ compiler)
 - boost
 - openGL 3.0+
@@ -21,7 +21,9 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 
 
 To get the dependencies assuming you have a fresh install of the latest version, simply run the following command:
+
 > $ yum install libtool boost-* glew-devel SDL2_* glm-devel gcc-c++
+
 **Don't include the $ sign**
 
 Then from the game root directory run the following commands:

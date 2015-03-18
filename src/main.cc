@@ -1,7 +1,8 @@
 #define GLEW_STATIC // Easier debugging
 #include <GL/glew.h>
 #ifdef __APPLE__
-
+  #include <OpenGL/gl3.h>
+#else
   #include <GL/gl.h>
 #endif
 #include <SDL2/SDL.h>
