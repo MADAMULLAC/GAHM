@@ -3,8 +3,6 @@
 ##Project Plan
 Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/blob/master/ProjectPlan.md "Project Plan")
 
-##Below will contain the details on how to run and control the game and will be filled in over time.
-
 ## Prerequisites
 - GNU Autotools (2.4.6)
 - [SDL2](https://www.libsdl.org/) (for windows follow [this tutorial on how to build and include SDL](http://www.libsdl.org/extras/win32/cygwin/README.txt "SDL windows Tutorial link"))
@@ -27,6 +25,9 @@ To get the dependencies assuming you have a fresh install of the latest version,
 *Don't include the $ sign*
 
 ### OSx
+
+*Currently there is a shader error while running on OSx, hope to have this fixed soon.*
+
 To get the above packages I would recommend using [brew](http://brew.sh/) and [MacPorts](https://www.macports.org/) as these will do all the package management for you; both are fairly simple to install by following the simple instructions on their relevant websites.
 Once again ensure you have the above packages included. 
 
@@ -41,11 +42,13 @@ By installing macport that should suffice for other requirements.
 You will also need xCode installed as this will include dependencies required by the game.
 
 ### Windows
-You will need to install [cygwin](https://www.cygwin.com/) and include the dependencies listed above during the install stage.
-If you do not have those packages and already have cygwin installed; simply re-run the installer and include the packages as before
-and cygwin will install them.
 
-Please note, that GLM is still not being linked and the makefile is still under development. Windows will hopefully be completed soon.
+*The Makefile for windows is still under development!*
+
+You will need to install [cygwin](https://www.cygwin.com/) and include the dependencies listed above during the install stage.
+If you do not have those packages and already have cygwin installed; simply re-run the installer and include the packages as before and cygwin will install them.
+
+Please note, that GLM and glew are still not being linked and the makefile is still under development. Windows will hopefully be completed soon.
 
 ### Build and run
 
