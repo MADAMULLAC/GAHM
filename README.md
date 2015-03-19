@@ -15,7 +15,7 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 - [GLM](http://glm.g-truc.net/)
 - Unix like command line (terminal, cygwin, etc…) to run makefile
 
-## How to get dependencies, build and run.
+## How to get dependencies.
 
 ### Fedora, RedHat, Other Yum package manager based OS's
 
@@ -25,17 +25,6 @@ To get the dependencies assuming you have a fresh install of the latest version,
 > $ yum install libtool boost-* glew-devel SDL2_* glm-devel gcc-c++
 
 **Don't include the $ sign**
-
-Then from the game root directory run the following commands:
-
-``` bash
-$ autoreconf -i
-$ ./configure
-$ make
-```
-
-This will produce an executable in the src directory called "shaderexample"; to run execute the game use
-> $ ./src/shaderexample
 
 ### Windows
 You will need to install [cygwin](https://www.cygwin.com/) and include the dependencies listed above during the install stage.
@@ -53,6 +42,19 @@ Once again ensure you have the above packages included.
 By installing macport that should suffice for other requirements.
 
 You will also need xCode installed as this will include dependencies required by the game.
+
+## Build and run
+
+Then from the game root directory run the following commands:
+
+``` bash
+$ autoreconf -i
+$ ./configure
+$ make
+```
+
+This will produce an executable in the src directory called "shaderexample"; to run execute the game use
+> $ ./src/shaderexample
 
 ## Aim of the game
 
