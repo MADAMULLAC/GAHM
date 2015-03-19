@@ -48,7 +48,7 @@ Please note, that GLM is still not being linked and the makefile is still under 
 To get the above packages I would recommend using [brew](http://brew.sh/) and [MacPorts](https://www.macports.org/) as these will do all the package management for you; both are fairly simple to install by following the simple instructions on their relevant websites.
 Once again ensure you have the above packages included. 
 
-> $ brew install autoconf automake libtool boost
+> $ brew install autoconf automake libtool boost sld2
 
 By installing macport that should suffice for other requirements.
 
