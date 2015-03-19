@@ -24,7 +24,21 @@ To get the dependencies assuming you have a fresh install of the latest version,
 
 > $ yum install libtool boost-* glew-devel SDL2_* glm-devel gcc-c++
 
-**Don't include the $ sign**
+*Don't include the $ sign*
+
+### OSx
+To get the above packages I would recommend using [brew](http://brew.sh/) and [MacPorts](https://www.macports.org/) as these will do all the package management for you; both are fairly simple to install by following the simple instructions on their relevant websites.
+Once again ensure you have the above packages included. 
+
+> $ brew install autoconf automake libtool boost sdl2 glm 
+
+> $ sudo port install glm
+
+*ONCE AGAIN; Don't include the $ sign*
+
+By installing macport that should suffice for other requirements.
+
+You will also need xCode installed as this will include dependencies required by the game.
 
 ### Windows
 You will need to install [cygwin](https://www.cygwin.com/) and include the dependencies listed above during the install stage.
@@ -33,17 +47,7 @@ and cygwin will install them.
 
 Please note, that GLM is still not being linked and the makefile is still under development. Windows will hopefully be completed soon.
 
-### OSx
-To get the above packages I would recommend using [brew](http://brew.sh/) and [MacPorts](https://www.macports.org/) as these will do all the package management for you; both are fairly simple to install by following the simple instructions on their relevant websites.
-Once again ensure you have the above packages included. 
-
-> $ brew install autoconf automake libtool boost sld2
-
-By installing macport that should suffice for other requirements.
-
-You will also need xCode installed as this will include dependencies required by the game.
-
-## Build and run
+### Build and run
 
 Then from the game root directory run the following commands:
 
@@ -55,6 +59,8 @@ $ make
 
 This will produce an executable in the src directory called "shaderexample"; to run execute the game use
 > $ ./src/shaderexample
+
+*IF IT WASN'T ALREADY CLEAR FROM ABOVE, ONCE AGAIN! Don't include the $ sign*
 
 ## Aim of the game
 
