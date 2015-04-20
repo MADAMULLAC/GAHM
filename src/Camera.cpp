@@ -40,7 +40,7 @@ float Camera::fieldOfView() const {
 }
 
 void Camera::setFieldOfView(float fieldOfView) {
-    assert(fieldOfView > 0.0f && fieldOfView < 180.0f);
+    assert(fieldOfView > 0.0f && fieldOfView < 120.0f);
     _fieldOfView = fieldOfView;
 }
 
