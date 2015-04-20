@@ -1,4 +1,4 @@
-EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h
+EXTRA_DIST = GameWorld.h GameAssetManager.h GameAsset.h CubeAsset.h Camera.h
 
 bin_PROGRAMS = shaderexample
 shaderexample_SOURCES = main.cc GameWorld.cc GameAssetManager.cc CubeAsset.cc Camera.cc
