@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/MADAMULLAC/GAHM.svg?branch=master)](https://travis-ci.org/MADAMULLAC/GAHM)
+
 #Read Me
 
 ##Project Plan

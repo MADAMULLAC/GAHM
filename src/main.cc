@@ -39,7 +39,7 @@ struct SDLWindowDeleter {
 };
 
 void Draw(const std::shared_ptr<SDL_Window> window, const std::shared_ptr<GameWorld> game_world) {
-  glClearColor(1.0f, 1.0f, 1.0f, 1.0f);
+  glClearColor(1.0f, 0.0f, 1.0f, 1.0f);
   glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 
   game_world->Draw();
@@ -49,8 +49,8 @@ void Draw(const std::shared_ptr<SDL_Window> window, const std::shared_ptr<GameWo
 }
 
 std::shared_ptr<SDL_Window> InitWorld() {
-  Uint32 width = 640;
-  Uint32 height = 480;
+  Uint32 width = 1200;
+  Uint32 height = 800;
   SDL_Window * _window;
   std::shared_ptr<SDL_Window> window;
 

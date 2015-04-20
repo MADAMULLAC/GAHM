@@ -15,7 +15,7 @@ Camera::Camera() :
     _fieldOfView(50.0f),
     _nearPlane(0.01f),
     _farPlane(100.0f),
-    _viewportAspectRatio(4.0f/3.0f)
+    _viewportAspectRatio(3.0f/2.0f)
 {
 }
 
@@ -40,7 +40,7 @@ float Camera::fieldOfView() const {
 }
 
 void Camera::setFieldOfView(float fieldOfView) {
-    assert(fieldOfView > 0.0f && fieldOfView < 120.0f);
+    assert(fieldOfView > 0.0f && fieldOfView < 180.0f);
     _fieldOfView = fieldOfView;
 }
 
