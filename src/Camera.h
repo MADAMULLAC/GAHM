@@ -1,3 +1,7 @@
+#define _USE_MATH_DEFINES
+#include <cmath>
+#include <glm/gtc/matrix_transform.hpp>
+
 namespace tdogl {
 
     class Camera {

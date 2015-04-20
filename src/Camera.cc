@@ -1,7 +1,4 @@
-#define _USE_MATH_DEFINES
-#include <cmath>
 #include "Camera.h"
-#include <glm/gtc/matrix_transform.hpp>
 
 using namespace tdogl;
 
