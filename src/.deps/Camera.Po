@@ -1,361 +1,393 @@
-Camera.o: Camera.cpp /usr/include/stdc-predef.h Camera.h \
- /usr/include/c++/4.9.2/cmath \
- /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h \
- /usr/include/bits/wordsize.h \
- /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h \
- /usr/include/features.h /usr/include/sys/cdefs.h \
- /usr/include/gnu/stubs.h /usr/include/gnu/stubs-64.h \
- /usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h \
- /usr/include/c++/4.9.2/bits/cpp_type_traits.h \
- /usr/include/c++/4.9.2/ext/type_traits.h /usr/include/math.h \
- /usr/include/bits/huge_val.h /usr/include/bits/huge_valf.h \
- /usr/include/bits/huge_vall.h /usr/include/bits/inf.h \
- /usr/include/bits/nan.h /usr/include/bits/mathdef.h \
- /usr/include/bits/mathcalls.h /usr/include/bits/mathinline.h \
- /usr/include/glm/gtc/matrix_transform.hpp /usr/include/glm/mat4x4.hpp \
- /usr/include/glm/detail/type_mat4x4.hpp /usr/include/glm/fwd.hpp \
- /usr/include/glm/detail/type_int.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/c++/4.9.2/cassert /usr/include/assert.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/emmintrin.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/xmmintrin.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/mmintrin.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/mm_malloc.h \
- /usr/include/stdlib.h \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h \
- /usr/include/bits/waitflags.h /usr/include/bits/waitstatus.h \
- /usr/include/endian.h /usr/include/bits/endian.h \
- /usr/include/bits/byteswap.h /usr/include/bits/types.h \
- /usr/include/bits/typesizes.h /usr/include/bits/byteswap-16.h \
- /usr/include/xlocale.h /usr/include/sys/types.h /usr/include/time.h \
- /usr/include/sys/select.h /usr/include/bits/select.h \
- /usr/include/bits/sigset.h /usr/include/bits/time.h \
- /usr/include/sys/sysmacros.h /usr/include/bits/pthreadtypes.h \
- /usr/include/alloca.h /usr/include/bits/stdlib-bsearch.h \
- /usr/include/bits/stdlib-float.h /usr/include/c++/4.9.2/cstdint \
- /usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h \
- /usr/include/stdint.h /usr/include/bits/wchar.h \
- /usr/include/glm/detail/type_float.hpp \
- /usr/include/glm/detail/type_vec.hpp \
- /usr/include/glm/detail/precision.hpp \
- /usr/include/glm/detail/type_int.hpp \
- /usr/include/glm/detail/type_mat.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/detail/type_vec.hpp /usr/include/c++/4.9.2/cstddef \
- /usr/include/glm/detail/type_vec4.inl \
- /usr/include/glm/detail/type_mat.hpp /usr/include/c++/4.9.2/limits \
- /usr/include/glm/detail/type_mat4x4.inl /usr/include/glm/vec2.hpp \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/type_vec2.inl /usr/include/glm/vec3.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/type_vec3.inl /usr/include/glm/vec4.hpp \
- /usr/include/glm/detail/type_vec4.hpp \
- /usr/include/glm/gtc/matrix_transform.inl /usr/include/glm/geometric.hpp \
- /usr/include/glm/detail/func_geometric.hpp \
- /usr/include/glm/detail/type_vec3.hpp \
- /usr/include/glm/detail/func_geometric.inl \
- /usr/include/glm/detail/func_exponential.hpp \
- /usr/include/glm/detail/type_vec1.hpp \
- /usr/include/glm/detail/type_vec1.inl \
- /usr/include/glm/detail/type_vec2.hpp \
- /usr/include/glm/detail/func_exponential.inl \
- /usr/include/glm/detail/func_vector_relational.hpp \
- /usr/include/glm/detail/func_vector_relational.inl \
- /usr/include/glm/detail/_vectorize.hpp \
- /usr/include/glm/detail/func_common.hpp \
- /usr/include/glm/detail/_fixes.hpp \
- /usr/include/glm/detail/func_common.inl \
- /usr/include/glm/detail/type_float.hpp \
- /usr/include/glm/trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.hpp \
- /usr/include/glm/detail/func_trigonometric.inl \
- /usr/include/glm/matrix.hpp /usr/include/glm/detail/func_matrix.hpp \
- /usr/include/glm/detail/precision.hpp /usr/include/glm/detail/setup.hpp \
- /usr/include/glm/detail/type_mat.hpp /usr/include/glm/vec2.hpp \
- /usr/include/glm/vec3.hpp /usr/include/glm/vec4.hpp \
- /usr/include/glm/mat2x2.hpp /usr/include/glm/detail/type_mat2x2.hpp \
- /usr/include/glm/detail/type_mat2x2.inl /usr/include/glm/mat2x3.hpp \
- /usr/include/glm/detail/type_mat2x3.hpp \
- /usr/include/glm/detail/type_mat2x3.inl /usr/include/glm/mat2x4.hpp \
- /usr/include/glm/detail/type_mat2x4.hpp \
- /usr/include/glm/detail/type_mat2x4.inl /usr/include/glm/mat3x2.hpp \
- /usr/include/glm/detail/type_mat3x2.hpp \
- /usr/include/glm/detail/type_mat3x2.inl /usr/include/glm/mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.hpp \
- /usr/include/glm/detail/type_mat3x3.inl /usr/include/glm/mat3x4.hpp \
- /usr/include/glm/detail/type_mat3x4.hpp \
- /usr/include/glm/detail/type_mat3x4.inl /usr/include/glm/mat4x2.hpp \
- /usr/include/glm/detail/type_mat4x2.hpp \
- /usr/include/glm/detail/type_mat4x2.inl /usr/include/glm/mat4x3.hpp \
- /usr/include/glm/detail/type_mat4x3.hpp \
- /usr/include/glm/detail/type_mat4x3.inl /usr/include/glm/mat4x4.hpp \
- /usr/include/glm/detail/func_matrix.inl /usr/include/glm/geometric.hpp
-
-/usr/include/stdc-predef.h:
+Camera.o: Camera.cc Camera.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config \
+  /usr/include/math.h /usr/include/sys/cdefs.h \
+  /usr/include/sys/_symbol_aliasing.h \
+  /usr/include/sys/_posix_availability.h /usr/include/Availability.h \
+  /usr/include/AvailabilityInternal.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstddef \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h \
+  /opt/local/include/glm/gtc/matrix_transform.hpp \
+  /opt/local/include/glm/gtc/../mat4x4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat4x4.hpp \
+  /opt/local/include/glm/gtc/../detail/../fwd.hpp \
+  /opt/local/include/glm/gtc/../detail/type_int.hpp \
+  /opt/local/include/glm/gtc/../detail/setup.hpp \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cassert \
+  /usr/include/assert.h /usr/include/stdlib.h /usr/include/_types.h \
+  /usr/include/sys/_types.h /usr/include/machine/_types.h \
+  /usr/include/i386/_types.h /usr/include/sys/_pthread/_pthread_types.h \
+  /usr/include/sys/wait.h /usr/include/sys/_types/_pid_t.h \
+  /usr/include/sys/_types/_id_t.h /usr/include/sys/signal.h \
+  /usr/include/sys/appleapiopts.h /usr/include/machine/signal.h \
+  /usr/include/i386/signal.h /usr/include/machine/_mcontext.h \
+  /usr/include/i386/_mcontext.h /usr/include/mach/i386/_structs.h \
+  /usr/include/sys/_pthread/_pthread_attr_t.h \
+  /usr/include/sys/_types/_sigaltstack.h \
+  /usr/include/sys/_types/_ucontext.h \
+  /usr/include/sys/_types/_sigset_t.h /usr/include/sys/_types/_size_t.h \
+  /usr/include/sys/_types/_uid_t.h /usr/include/sys/resource.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h \
+  /usr/include/stdint.h /usr/include/sys/_types/_int8_t.h \
+  /usr/include/sys/_types/_int16_t.h /usr/include/sys/_types/_int32_t.h \
+  /usr/include/sys/_types/_int64_t.h /usr/include/_types/_uint8_t.h \
+  /usr/include/_types/_uint16_t.h /usr/include/_types/_uint32_t.h \
+  /usr/include/_types/_uint64_t.h /usr/include/sys/_types/_intptr_t.h \
+  /usr/include/sys/_types/_uintptr_t.h /usr/include/_types/_intmax_t.h \
+  /usr/include/_types/_uintmax_t.h /usr/include/sys/_types/_timeval.h \
+  /usr/include/machine/endian.h /usr/include/i386/endian.h \
+  /usr/include/sys/_endian.h /usr/include/libkern/_OSByteOrder.h \
+  /usr/include/libkern/i386/_OSByteOrder.h /usr/include/alloca.h \
+  /usr/include/sys/_types/_ct_rune_t.h /usr/include/sys/_types/_rune_t.h \
+  /usr/include/sys/_types/_wchar_t.h /usr/include/sys/_types/_null.h \
+  /usr/include/machine/types.h /usr/include/i386/types.h \
+  /usr/include/sys/_types/_dev_t.h /usr/include/sys/_types/_mode_t.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/pmmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/emmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/xmmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/mmintrin.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/mm_malloc.h \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint \
+  /opt/local/include/glm/gtc/../detail/type_float.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec.hpp \
+  /opt/local/include/glm/gtc/../detail/precision.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec4.inl \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/limits \
+  /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef_min_max \
+  /opt/local/include/glm/gtc/../detail/type_mat4x4.inl \
+  /opt/local/include/glm/gtc/../vec2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec2.inl \
+  /opt/local/include/glm/gtc/../vec3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec3.inl \
+  /opt/local/include/glm/gtc/../vec4.hpp \
+  /opt/local/include/glm/gtc/../gtc/constants.hpp \
+  /opt/local/include/glm/gtc/constants.inl \
+  /opt/local/include/glm/gtc/matrix_transform.inl \
+  /opt/local/include/glm/gtc/../geometric.hpp \
+  /opt/local/include/glm/gtc/../detail/func_geometric.hpp \
+  /opt/local/include/glm/gtc/../detail/func_geometric.inl \
+  /opt/local/include/glm/gtc/../detail/func_exponential.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec1.hpp \
+  /opt/local/include/glm/gtc/../detail/type_vec1.inl \
+  /opt/local/include/glm/gtc/../detail/func_exponential.inl \
+  /opt/local/include/glm/gtc/../detail/func_vector_relational.hpp \
+  /opt/local/include/glm/gtc/../detail/func_vector_relational.inl \
+  /opt/local/include/glm/gtc/../detail/_vectorize.hpp \
+  /opt/local/include/glm/gtc/../detail/func_common.hpp \
+  /opt/local/include/glm/gtc/../detail/_fixes.hpp \
+  /opt/local/include/glm/gtc/../detail/func_common.inl \
+  /opt/local/include/glm/gtc/../trigonometric.hpp \
+  /opt/local/include/glm/gtc/../detail/func_trigonometric.hpp \
+  /opt/local/include/glm/gtc/../detail/func_trigonometric.inl \
+  /opt/local/include/glm/gtc/../matrix.hpp \
+  /opt/local/include/glm/gtc/../detail/func_matrix.hpp \
+  /opt/local/include/glm/gtc/../detail/../mat2x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x2.inl \
+  /opt/local/include/glm/gtc/../detail/../mat2x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x3.inl \
+  /opt/local/include/glm/gtc/../detail/../mat2x4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat2x4.inl \
+  /opt/local/include/glm/gtc/../detail/../mat3x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x2.inl \
+  /opt/local/include/glm/gtc/../detail/../mat3x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x3.inl \
+  /opt/local/include/glm/gtc/../detail/../mat3x4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x4.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat3x4.inl \
+  /opt/local/include/glm/gtc/../detail/../mat4x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat4x2.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat4x2.inl \
+  /opt/local/include/glm/gtc/../detail/../mat4x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat4x3.hpp \
+  /opt/local/include/glm/gtc/../detail/type_mat4x3.inl \
+  /opt/local/include/glm/gtc/../detail/func_matrix.inl
 
 Camera.h:
 
-/usr/include/c++/4.9.2/cmath:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cmath:
 
-/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/c++config.h:
-
-/usr/include/bits/wordsize.h:
-
-/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/os_defines.h:
-
-/usr/include/features.h:
-
-/usr/include/sys/cdefs.h:
-
-/usr/include/gnu/stubs.h:
-
-/usr/include/gnu/stubs-64.h:
-
-/usr/include/c++/4.9.2/x86_64-redhat-linux/bits/cpu_defines.h:
-
-/usr/include/c++/4.9.2/bits/cpp_type_traits.h:
-
-/usr/include/c++/4.9.2/ext/type_traits.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__config:
 
 /usr/include/math.h:
 
-/usr/include/bits/huge_val.h:
+/usr/include/sys/cdefs.h:
 
-/usr/include/bits/huge_valf.h:
+/usr/include/sys/_symbol_aliasing.h:
 
-/usr/include/bits/huge_vall.h:
+/usr/include/sys/_posix_availability.h:
 
-/usr/include/bits/inf.h:
+/usr/include/Availability.h:
 
-/usr/include/bits/nan.h:
+/usr/include/AvailabilityInternal.h:
 
-/usr/include/bits/mathdef.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/type_traits:
 
-/usr/include/bits/mathcalls.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstddef:
 
-/usr/include/bits/mathinline.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stddef.h:
 
-/usr/include/glm/gtc/matrix_transform.hpp:
+/opt/local/include/glm/gtc/matrix_transform.hpp:
 
-/usr/include/glm/mat4x4.hpp:
+/opt/local/include/glm/gtc/../mat4x4.hpp:
 
-/usr/include/glm/detail/type_mat4x4.hpp:
+/opt/local/include/glm/gtc/../detail/type_mat4x4.hpp:
 
-/usr/include/glm/fwd.hpp:
+/opt/local/include/glm/gtc/../detail/../fwd.hpp:
 
-/usr/include/glm/detail/type_int.hpp:
+/opt/local/include/glm/gtc/../detail/type_int.hpp:
 
-/usr/include/glm/detail/setup.hpp:
+/opt/local/include/glm/gtc/../detail/setup.hpp:
 
-/usr/include/c++/4.9.2/cassert:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cassert:
 
 /usr/include/assert.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/emmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/xmmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/mmintrin.h:
-
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/mm_malloc.h:
-
 /usr/include/stdlib.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stddef.h:
+/usr/include/_types.h:
 
-/usr/include/bits/waitflags.h:
+/usr/include/sys/_types.h:
 
-/usr/include/bits/waitstatus.h:
+/usr/include/machine/_types.h:
 
-/usr/include/endian.h:
+/usr/include/i386/_types.h:
 
-/usr/include/bits/endian.h:
+/usr/include/sys/_pthread/_pthread_types.h:
 
-/usr/include/bits/byteswap.h:
+/usr/include/sys/wait.h:
 
-/usr/include/bits/types.h:
+/usr/include/sys/_types/_pid_t.h:
 
-/usr/include/bits/typesizes.h:
+/usr/include/sys/_types/_id_t.h:
 
-/usr/include/bits/byteswap-16.h:
+/usr/include/sys/signal.h:
 
-/usr/include/xlocale.h:
+/usr/include/sys/appleapiopts.h:
 
-/usr/include/sys/types.h:
+/usr/include/machine/signal.h:
 
-/usr/include/time.h:
+/usr/include/i386/signal.h:
 
-/usr/include/sys/select.h:
+/usr/include/machine/_mcontext.h:
 
-/usr/include/bits/select.h:
+/usr/include/i386/_mcontext.h:
 
-/usr/include/bits/sigset.h:
+/usr/include/mach/i386/_structs.h:
 
-/usr/include/bits/time.h:
+/usr/include/sys/_pthread/_pthread_attr_t.h:
 
-/usr/include/sys/sysmacros.h:
+/usr/include/sys/_types/_sigaltstack.h:
 
-/usr/include/bits/pthreadtypes.h:
+/usr/include/sys/_types/_ucontext.h:
 
-/usr/include/alloca.h:
+/usr/include/sys/_types/_sigset_t.h:
 
-/usr/include/bits/stdlib-bsearch.h:
+/usr/include/sys/_types/_size_t.h:
 
-/usr/include/bits/stdlib-float.h:
+/usr/include/sys/_types/_uid_t.h:
 
-/usr/include/c++/4.9.2/cstdint:
+/usr/include/sys/resource.h:
 
-/usr/lib/gcc/x86_64-redhat-linux/4.9.2/include/stdint.h:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/stdint.h:
 
 /usr/include/stdint.h:
 
-/usr/include/bits/wchar.h:
+/usr/include/sys/_types/_int8_t.h:
 
-/usr/include/glm/detail/type_float.hpp:
+/usr/include/sys/_types/_int16_t.h:
 
-/usr/include/glm/detail/type_vec.hpp:
+/usr/include/sys/_types/_int32_t.h:
 
-/usr/include/glm/detail/precision.hpp:
+/usr/include/sys/_types/_int64_t.h:
 
-/usr/include/glm/detail/type_int.hpp:
+/usr/include/_types/_uint8_t.h:
 
-/usr/include/glm/detail/type_mat.hpp:
+/usr/include/_types/_uint16_t.h:
 
-/usr/include/glm/detail/type_vec4.hpp:
+/usr/include/_types/_uint32_t.h:
 
-/usr/include/glm/detail/type_vec.hpp:
+/usr/include/_types/_uint64_t.h:
 
-/usr/include/c++/4.9.2/cstddef:
+/usr/include/sys/_types/_intptr_t.h:
 
-/usr/include/glm/detail/type_vec4.inl:
+/usr/include/sys/_types/_uintptr_t.h:
 
-/usr/include/glm/detail/type_mat.hpp:
+/usr/include/_types/_intmax_t.h:
 
-/usr/include/c++/4.9.2/limits:
+/usr/include/_types/_uintmax_t.h:
 
-/usr/include/glm/detail/type_mat4x4.inl:
+/usr/include/sys/_types/_timeval.h:
 
-/usr/include/glm/vec2.hpp:
+/usr/include/machine/endian.h:
 
-/usr/include/glm/detail/type_vec2.hpp:
+/usr/include/i386/endian.h:
 
-/usr/include/glm/detail/type_vec2.inl:
+/usr/include/sys/_endian.h:
 
-/usr/include/glm/vec3.hpp:
+/usr/include/libkern/_OSByteOrder.h:
 
-/usr/include/glm/detail/type_vec3.hpp:
+/usr/include/libkern/i386/_OSByteOrder.h:
 
-/usr/include/glm/detail/type_vec3.inl:
+/usr/include/alloca.h:
 
-/usr/include/glm/vec4.hpp:
+/usr/include/sys/_types/_ct_rune_t.h:
 
-/usr/include/glm/detail/type_vec4.hpp:
+/usr/include/sys/_types/_rune_t.h:
 
-/usr/include/glm/gtc/matrix_transform.inl:
+/usr/include/sys/_types/_wchar_t.h:
 
-/usr/include/glm/geometric.hpp:
+/usr/include/sys/_types/_null.h:
 
-/usr/include/glm/detail/func_geometric.hpp:
+/usr/include/machine/types.h:
 
-/usr/include/glm/detail/type_vec3.hpp:
+/usr/include/i386/types.h:
 
-/usr/include/glm/detail/func_geometric.inl:
+/usr/include/sys/_types/_dev_t.h:
 
-/usr/include/glm/detail/func_exponential.hpp:
+/usr/include/sys/_types/_mode_t.h:
 
-/usr/include/glm/detail/type_vec1.hpp:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/pmmintrin.h:
 
-/usr/include/glm/detail/type_vec1.inl:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/emmintrin.h:
 
-/usr/include/glm/detail/type_vec2.hpp:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/xmmintrin.h:
 
-/usr/include/glm/detail/func_exponential.inl:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/mmintrin.h:
 
-/usr/include/glm/detail/func_vector_relational.hpp:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.1.0/include/mm_malloc.h:
 
-/usr/include/glm/detail/func_vector_relational.inl:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/cstdint:
 
-/usr/include/glm/detail/_vectorize.hpp:
+/opt/local/include/glm/gtc/../detail/type_float.hpp:
 
-/usr/include/glm/detail/func_common.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec.hpp:
 
-/usr/include/glm/detail/_fixes.hpp:
+/opt/local/include/glm/gtc/../detail/precision.hpp:
 
-/usr/include/glm/detail/func_common.inl:
+/opt/local/include/glm/gtc/../detail/type_mat.hpp:
 
-/usr/include/glm/detail/type_float.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec4.hpp:
 
-/usr/include/glm/trigonometric.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec4.inl:
 
-/usr/include/glm/detail/func_trigonometric.hpp:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/limits:
 
-/usr/include/glm/detail/func_trigonometric.inl:
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1/__undef_min_max:
 
-/usr/include/glm/matrix.hpp:
+/opt/local/include/glm/gtc/../detail/type_mat4x4.inl:
 
-/usr/include/glm/detail/func_matrix.hpp:
+/opt/local/include/glm/gtc/../vec2.hpp:
 
-/usr/include/glm/detail/precision.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec2.hpp:
 
-/usr/include/glm/detail/setup.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec2.inl:
 
-/usr/include/glm/detail/type_mat.hpp:
+/opt/local/include/glm/gtc/../vec3.hpp:
 
-/usr/include/glm/vec2.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec3.hpp:
 
-/usr/include/glm/vec3.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec3.inl:
 
-/usr/include/glm/vec4.hpp:
+/opt/local/include/glm/gtc/../vec4.hpp:
 
-/usr/include/glm/mat2x2.hpp:
+/opt/local/include/glm/gtc/../gtc/constants.hpp:
 
-/usr/include/glm/detail/type_mat2x2.hpp:
+/opt/local/include/glm/gtc/constants.inl:
 
-/usr/include/glm/detail/type_mat2x2.inl:
+/opt/local/include/glm/gtc/matrix_transform.inl:
 
-/usr/include/glm/mat2x3.hpp:
+/opt/local/include/glm/gtc/../geometric.hpp:
 
-/usr/include/glm/detail/type_mat2x3.hpp:
+/opt/local/include/glm/gtc/../detail/func_geometric.hpp:
 
-/usr/include/glm/detail/type_mat2x3.inl:
+/opt/local/include/glm/gtc/../detail/func_geometric.inl:
 
-/usr/include/glm/mat2x4.hpp:
+/opt/local/include/glm/gtc/../detail/func_exponential.hpp:
 
-/usr/include/glm/detail/type_mat2x4.hpp:
+/opt/local/include/glm/gtc/../detail/type_vec1.hpp:
 
-/usr/include/glm/detail/type_mat2x4.inl:
+/opt/local/include/glm/gtc/../detail/type_vec1.inl:
 
-/usr/include/glm/mat3x2.hpp:
+/opt/local/include/glm/gtc/../detail/func_exponential.inl:
 
-/usr/include/glm/detail/type_mat3x2.hpp:
+/opt/local/include/glm/gtc/../detail/func_vector_relational.hpp:
 
-/usr/include/glm/detail/type_mat3x2.inl:
+/opt/local/include/glm/gtc/../detail/func_vector_relational.inl:
 
-/usr/include/glm/mat3x3.hpp:
+/opt/local/include/glm/gtc/../detail/_vectorize.hpp:
 
-/usr/include/glm/detail/type_mat3x3.hpp:
+/opt/local/include/glm/gtc/../detail/func_common.hpp:
 
-/usr/include/glm/detail/type_mat3x3.inl:
+/opt/local/include/glm/gtc/../detail/_fixes.hpp:
 
-/usr/include/glm/mat3x4.hpp:
+/opt/local/include/glm/gtc/../detail/func_common.inl:
 
-/usr/include/glm/detail/type_mat3x4.hpp:
+/opt/local/include/glm/gtc/../trigonometric.hpp:
 
-/usr/include/glm/detail/type_mat3x4.inl:
+/opt/local/include/glm/gtc/../detail/func_trigonometric.hpp:
 
-/usr/include/glm/mat4x2.hpp:
+/opt/local/include/glm/gtc/../detail/func_trigonometric.inl:
 
-/usr/include/glm/detail/type_mat4x2.hpp:
+/opt/local/include/glm/gtc/../matrix.hpp:
 
-/usr/include/glm/detail/type_mat4x2.inl:
+/opt/local/include/glm/gtc/../detail/func_matrix.hpp:
 
-/usr/include/glm/mat4x3.hpp:
+/opt/local/include/glm/gtc/../detail/../mat2x2.hpp:
 
-/usr/include/glm/detail/type_mat4x3.hpp:
+/opt/local/include/glm/gtc/../detail/type_mat2x2.hpp:
 
-/usr/include/glm/detail/type_mat4x3.inl:
+/opt/local/include/glm/gtc/../detail/type_mat2x2.inl:
 
-/usr/include/glm/mat4x4.hpp:
+/opt/local/include/glm/gtc/../detail/../mat2x3.hpp:
 
-/usr/include/glm/detail/func_matrix.inl:
+/opt/local/include/glm/gtc/../detail/type_mat2x3.hpp:
 
-/usr/include/glm/geometric.hpp:
+/opt/local/include/glm/gtc/../detail/type_mat2x3.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat2x4.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat2x4.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat2x4.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat3x2.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x2.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x2.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat3x3.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x3.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x3.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat3x4.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x4.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat3x4.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat4x2.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat4x2.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat4x2.inl:
+
+/opt/local/include/glm/gtc/../detail/../mat4x3.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat4x3.hpp:
+
+/opt/local/include/glm/gtc/../detail/type_mat4x3.inl:
+
+/opt/local/include/glm/gtc/../detail/func_matrix.inl:
