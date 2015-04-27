@@ -1,10 +1,6 @@
 #define GLEW_STATIC // Easier debugging
 #include <GL/glew.h>
-#ifdef __APPLE__
-  #include <OpenGL/gl3.h>
-#else
-  #include <GL/gl.h>
-#endif
+
 #include <SDL2/SDL.h>
 #include <iostream>
 #include <memory>
@@ -56,8 +52,8 @@ std::shared_ptr<SDL_Window> InitWorld() {
 
   // Glew will later ensure that OpenGL 2 *is* supported
   SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
-  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 2);
-  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 0);
+  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 3);
+  SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 2);
 
   // Do double buffering in GL
   SDL_GL_SetAttribute(SDL_GL_DOUBLEBUFFER, 1);

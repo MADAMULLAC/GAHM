@@ -2,13 +2,6 @@
 #define GAMEWORLD_H
 
 #include <memory>
-
-#ifdef __APPLE__
-  #include <OpenGL/gl3.h>
-#else
-  #include <GL/gl.h>
-#endif
-
 #include "common.h"
 #include "GameAssetManager.h"
 #include "CubeAsset.h"

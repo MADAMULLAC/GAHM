@@ -8,12 +8,6 @@
 #include <fstream>
 #include <iostream>
 
-#ifdef __APPLE__
-  #include <OpenGL/gl3.h>
-#else
-  #include <GL/gl.h>
-#endif
-
 #include "common.h"
 #include "GameAsset.h"
 

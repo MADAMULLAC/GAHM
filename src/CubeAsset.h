@@ -3,15 +3,10 @@
 
 #include <vector>
 
-#ifdef __APPLE__
-  #include <OpenGL/gl3.h>
-#else
-  #include <GL/gl.h>
-#endif
-
 #define GLM_FORCE_RADIANS
 #include <glm/glm.hpp>
 #include <glm/ext.hpp>
+#include "common.h"
 
 #include "GameAsset.h"
 
