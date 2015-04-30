@@ -7,10 +7,8 @@ Please find the project plan outlined [here](https://github.com/MADAMULLAC/GAHM/
 
 ## Prerequisites
 - GNU Autotools (2.4.6)
-- [SDL2](https://www.libsdl.org/) (for windows follow [this tutorial on how to build and include SDL](http://www.libsdl.org/extras/win32/cygwin/README.txt "SDL windows Tutorial link"))
 - OpenGL 3.0+
 - C++11 compiler (tested with GCC 4.8.3+)
-- [Boost](http://www.boost.org/)
 - [GLEW](http://glew.sourceforge.net/)
 - [GLM](http://glm.g-truc.net/)
 - Unix like command line (terminal, cygwin, etc…) to run makefile
